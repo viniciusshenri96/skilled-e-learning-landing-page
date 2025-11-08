@@ -1,0 +1,131 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* VARIABLES COLORS */
+:root {
+
+    --color1: #666CA3;
+    --color2: #13183F;
+    --color3: #83869A;
+    --color4: #F74780;
+    --color5: #FFA7C3;
+    --color6: #FFFFFF;
+    --color7: linear-gradient(90deg,#f02aa6 100%, #ff6f48 26%);
+    --color8: linear-gradient(90deg,rgba(72, 81, 255, 1) 100%, rgba(240, 42, 166, 1) 26%);
+}
+
+/* VARIABLES FONT */
+
+.font-XL {
+    font: 800 3.5rem / 1 "League Spartan", sans-serif;
+}
+
+.font-l {
+    font: 800 2.5rem / 1 "League Spartan", sans-serif;
+}
+
+.font-m {
+    font: 800 2rem / 1.25 "League Spartan", sans-serif;
+}
+
+.font-s {
+    font: 800 1.5rem / 1 "League Spartan", sans-serif;
+}
+
+.font-body-m {
+    font: 500 1.125rem / 1 "League Spartan", sans-serif;
+}
+
+.font-body-s {
+    font: 700 1rem / 1 "League Spartan", sans-serif;
+}
+
+/* BUTTON */
+.btn:link {
+    font: 700 1.125rem / 1.55 "League Spartan", sans-serif;
+    padding: 14px 30px;
+    border-radius: 100px;
+
+}
+
+
+/* CSS RESET */
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+.header {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 24px;
+
+    margin-bottom: 172px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-header:link {
+    color: var(--color6);
+    background: var(--color2);
+}
+
+

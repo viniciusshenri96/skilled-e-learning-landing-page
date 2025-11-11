@@ -10,39 +10,40 @@
     --color4: #F74780;
     --color5: #FFA7C3;
     --color6: #FFFFFF;
-    --color7: linear-gradient(90deg,#f02aa6 100%, #ff6f48 26%);
+    --color7: linear-gradient(90deg,rgb(240, 42, 166) 100%, #ff6f48 26%);
     --color8: linear-gradient(90deg,rgba(72, 81, 255, 1) 100%, rgba(240, 42, 166, 1) 26%);
 }
 
 /* VARIABLES FONT */
 
 .font-XL {
-    font: 800 3.5rem / 1 "League Spartan", sans-serif;
+    font: 800 3.5rem / 1 "Plus Jakarta Sans", sans-serif;
+    color: var(--color2);
 }
 
 .font-l {
-    font: 800 2.5rem / 1 "League Spartan", sans-serif;
+    font: 800 2.5rem / 1 "Plus Jakarta Sans", sans-serif;
 }
 
 .font-m {
-    font: 800 2rem / 1.25 "League Spartan", sans-serif;
+    font: 800 2rem / 1.25 "Plus Jakarta Sans", sans-serif;
 }
 
 .font-s {
-    font: 800 1.5rem / 1 "League Spartan", sans-serif;
+    font: 800 1.5rem / 1 "Plus Jakarta Sans", sans-serif;
 }
 
 .font-body-m {
-    font: 500 1.125rem / 1 "League Spartan", sans-serif;
+    font: 500 1.125rem / 1 "Plus Jakarta Sans", sans-serif;
 }
 
 .font-body-s {
-    font: 700 1rem / 1 "League Spartan", sans-serif;
+    font: 700 1rem / 1 "Plus Jakarta Sans", sans-serif;
 }
 
 /* BUTTON */
 .btn:link {
-    font: 700 1.125rem / 1.55 "League Spartan", sans-serif;
+    font: 700 1.125rem / 1.55 "Plus Jakarta Sans", sans-serif;
     padding: 14px 30px;
     border-radius: 100px;
 
@@ -103,6 +104,10 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
+ul {
+    list-style: none;
+}
+
 /*
   10. Create a root stacking context
 */
@@ -128,4 +133,110 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--color2);
 }
 
+/* HERO */
+.hero {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
 
+    margin-bottom: 225px;
+}
+
+.hero__content {
+    max-width: 457px;
+}
+
+.hero__title {
+    margin-bottom: 30px;
+}
+
+.hero__desc {
+     color: var(--color3);
+     margin-bottom: 40px;
+     max-width: 38ch;
+}
+
+.btn-hero {
+     color: var(--color6);
+     background: linear-gradient(0deg,rgb(240, 42, 166) 0%, rgb(255, 111, 72) 100%);
+}
+
+.courses {
+   background: linear-gradient(0deg,#F0F1FF 0%, #FFFFFF 100%);
+}
+
+.courses__gradient {
+    max-width: 1440px;
+    margin: 0 auto;
+    /* padding-left: 40px;
+    padding-right: 40px; */
+}
+
+.courses__list {
+    max-width: 1110px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: start;
+    row-gap: 80px;
+    column-gap: 30px;
+    padding-bottom: 140px;
+}
+
+.courses__item-check {
+    color: var(--color6);
+    padding: 64px 32px 138px 32px;
+    background: linear-gradient(0deg, #F02AA6 0%, #FF6F48 100%);
+    border-radius: 15px;
+
+}
+
+.courses__title{
+    max-width: 14ch;
+}
+
+.courses__item {
+
+   border-radius: 15px;
+   background-color: var(--color6);
+}
+
+.courses__item svg, .courses__item img{
+    margin-bottom: 32px;
+    margin-left: 32px;
+    margin-top: -24px;
+}
+
+.courses__content{
+    padding: 0 32px 40px 32px;
+}
+
+.courses__subtitle {
+    margin-bottom: 24px;
+}
+
+.courses__desc {
+    color: var(--color3);
+    margin-bottom: 52px;
+    max-width: 286px;
+    line-height: 1.55;
+}
+
+.courses__link:link {
+    /* background: none; */
+    padding: 0;
+    color: var(--color4);
+}
+
+.footer {
+  background-color: var(--color2);
+}
+
+.footer__container {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0;
+}
